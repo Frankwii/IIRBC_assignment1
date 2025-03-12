@@ -1,7 +1,7 @@
 import numpy as np
 import skimage.feature as skfeat
 import cv2
-
+from holidays_dataset_handler import HolidaysDatasetHandler
 
 def compute_1d_color_hist(img, bins_per_hist = 32):
     """
@@ -14,12 +14,14 @@ def compute_1d_color_hist(img, bins_per_hist = 32):
     - A numpy array of shape (bins_per_hist * 3,)
     """
     
-    hists = [0]*3
+    histograms = np.zeros((3, bins_per_hist))
 
     for i in range(3):
-        hists[i], _ = np.histogram(img[:,:,i], bins = bins_per_hist, range = (0,255))
+
+        h, _ = np.histogram(img[:,:,i], bins = bins_per_hist, range = (0,255))
+        histograms[i, :] = h/np.linalg.norm(h)
         
-    return np.array(hists).flatten()
+    return histograms.flatten()
 
 
 def compute_2d_color_hist(img, bins_per_hist = 16):
@@ -112,6 +114,71 @@ class CBIR:
 
         ord_res = sorted(results, key=lambda pair: pair[1])
         return ord_res
+
+    def search_sorted_image(self, query_descriptor):
+        """
+        Search an image in the system and return a sorted list of matches.
+        
+        - query_descriptor: Global descriptor of the query image (NumPy array)
+        
+        RETURNS:
+        - A list of the names of the images in the database, sorted from most to least similar to the query descriptor.
+        
+        Custom method.
+        """
+
+        return [name for name, _ in self.search_image(query_descriptor)]
+
+    def search_image_from_value(self, query_image):
+        """
+        Search an image in the system.
+        
+        - query_image: The image to be searched (NumPy array)
+
+        RETURNS:
+        - An sorted list of tuples, each one with the format (database image name, L2 distance)
+        
+        Custom method.
+        """
+        query_descriptor = self.desc_func(query_image, **self.params)
+        return self.search_image(query_descriptor)
+
+    def search_sorted_from_value(self, query_image):
+        """
+        Search an image in the system and return a sorted list of matches.
+        
+        - query_image: The image to be searched (NumPy array)
+
+        RETURNS:
+        - A list of the names of the images in the database, sorted from most to least similar to the query image.
+        
+        Custom method.
+        """
+        return [name for name, _ in self.search_image_from_value(query_image)]
+    
+    def compute_mAP(self, dataset_handler: HolidaysDatasetHandler):
+        """
+        Load a database into the instance and compute the mAP for that database.
+
+        - dataset_handler: The handler for the database to be used. It should have `load_database_images` and
+          `load_query_images` methods, each returning a dictionary with the image names as keys and the actual
+          images as values, regarding the training and test sets, respectively. 
+
+        RETURNS:
+        - The mean average precision of the current instance for the dataset provided.
+
+        Custom method.
+        """
+        images = dataset_handler.load_database_images()
+        self.build_image_db(images)
+        
+        query_images = dataset_handler.load_query_images()
+        ranked_dict = {
+            name: self.search_sorted_from_value(img)
+            for name, img in query_images.items()
+        }
+        
+        return dataset_handler.compute_mAP(ranked_dict)
 
 
 def extract_interest_points(img, feat_type = 'SIFT', nfeats = 500, thresh = 50):

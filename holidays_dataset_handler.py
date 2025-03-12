@@ -168,6 +168,17 @@ class HolidaysDatasetHandler:
         """
         return self.query_images
 
+    def load_query_images(self):
+        """
+        Retrieve a dictionary with the query images.
+    
+        Returns:
+            dict: A dict with the query image names as keys and np.arrays storing the corresponding images as values
+
+        Custom method.
+        """
+        return {name: self.get_image(name) for name in self.get_query_images()}
+
     def get_database_images(self):
         """
         Retrieve the list of database images.
@@ -176,6 +187,18 @@ class HolidaysDatasetHandler:
             list: A list of filenames representing the database images.
         """
         return self.database_images
+    
+    def load_database_images(self):
+        """
+        Retrieve a dictionary with the database images.
+    
+        Returns:
+            dict: A dict with the database image names as keys and np.arrays storing the corresponding images as values
+
+        Custom method.
+        """
+        return {name: self.get_image(name) for name in self.get_database_images()}
+        
 
     def compute_AP(self, image_name, ranked_list):
         """
