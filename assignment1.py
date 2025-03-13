@@ -36,9 +36,21 @@ def compute_2d_color_hist(img, bins_per_hist = 16):
     RETURN:
     - A numpy array of shape (bins_per_hist * bins_per_hist * 3,)
     """
-    
+    blue, green, red = cv2.split(img)
+    histograms = np.zeros((3, bins_per_hist * bins_per_hist))
+
+    h = cv2.calcHist([blue, green],[0,1],None, [bins_per_hist, bins_per_hist], ranges = [0,255,0,255]) # B/G
+    histograms[0,:] = h.flatten()/np.linalg.norm(h.flatten())
+
+    h = cv2.calcHist([blue, red],[0,1],None, [bins_per_hist, bins_per_hist], ranges = [0,255,0,255]) # B/R
+    histograms[1,:] = h.flatten()/np.linalg.norm(h.flatten())
+
+    h = cv2.calcHist([green, red],[0,1],None, [bins_per_hist, bins_per_hist], ranges = [0,255,0,255]) # G/R
+    histograms[2,:] = h.flatten()/np.linalg.norm(h.flatten())
+
+
     # YOUR CODE HERE
-    raise NotImplementedError()
+    return histograms.flatten()
     # -----
 
 
@@ -53,10 +65,11 @@ def compute_lbp_descriptor(img, p = 8, r = 1):
     RETURN: 
     - A numpy array of shape (p + 2,)
     """    
-    
-    # YOUR CODE HERE
-    raise NotImplementedError()
-    # -----
+    gray_image = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+    lbp = skfeat.local_binary_pattern(gray_image,p,r,'uniform')
+    h,_ = np.histogram(lbp.ravel(), bins = p + 2, range = (0,(p+2)))
+    return h
+
 
 
 class CBIR:
@@ -200,10 +213,19 @@ def extract_interest_points(img, feat_type = 'SIFT', nfeats = 500, thresh = 50):
     kp = []
     des = []
 
-    # YOUR CODE HERE
-    raise NotImplementedError()
-    # -----
-    
+    if feat_type == 'SIFT':
+        extractor = cv2.SIFT_create(nfeatures=nfeats)
+        kp, des = extractor.detectAndCompute(img, None)
+
+    elif feat_type == 'ORB':
+        extractor = cv2.ORB_create(nfeatures=nfeats,fastThreshold=thresh)
+        kp = extractor.detect(img,None)
+        kp, des = extractor.compute(img, kp)
+    elif feat_type == 'FAST_BRIEF':
+        fast = cv2.FastFeatureDetector_create(threshold=thresh)
+        extractor = cv2.xfeatures2d.BriefDescriptorExtractor_create()
+        kp = fast.detect(img,None)
+        kp, des = extractor.compute(img,kp)
     return kp, des
     
     
@@ -223,11 +245,30 @@ def find_matches(query_desc, database_desc, k=2):
     - matches (list of list of cv2.DMatch): A list where each element contains k matches,
       sorted by distance.
     """
+    matcher = cv2.BFMatcher_create()
+    matches = matcher.knnMatch(query_desc, database_desc, k)
+    return matches
 
-    # YOUR CODE HERE
-    raise NotImplementedError()
-    # ------
-
+def find_matches(query_desc, database_desc, k=2):
+    """
+    Match two sets of descriptors. For each query descriptor, this method searches
+    for the k closest descriptors in the database set.
+  
+    Parameters:
+    - query_desc (np.ndarray): A NumPy array of shape (num_query_kps, descriptor_size),
+      containing descriptors from the query image.
+    - database_desc (np.ndarray): A NumPy array of shape (num_database_kps, descriptor_size),
+      containing descriptors from the database image.
+    - k (int): Number of nearest neighbors to retrieve for each descriptor (default: 2).
+  
+    Returns:
+    - matches (list of list of cv2.DMatch): A list where each element contains k matches,
+      sorted by distance.
+    """
+    matcher = cv2.FlannBasedMatcher()
+    matches = matcher.knnMatch(query_desc, database_desc, k)
+    return matches
+    
 
 def filter_matches(matches, ratio=0.75):
     """
@@ -242,10 +283,11 @@ def filter_matches(matches, ratio=0.75):
     Returns:
     - filtered_matches (list of cv2.DMatch): A list of matches that passed the ratio test.
     """
-
-    # YOUR CODE HERE
-    raise NotImplementedError()
-    # -----
+    good = []
+    for m,n in matches:
+        if m.distance < ratio*n.distance:
+            good.append(m)
+    return good
 
 
 def evaluate(dataset, method='SIFT', nfeats=3000, thresh=25, ratio=0.75):
@@ -263,7 +305,4 @@ def evaluate(dataset, method='SIFT', nfeats=3000, thresh=25, ratio=0.75):
     Returns:
         float: The mean Average Precision (mAP) score for the retrieval system.
     """
-    
-    # YOUR CODE HERE
-    raise NotImplementedError()
-    # -----
+    images = load
