@@ -36,13 +36,17 @@ def compute_2d_color_hist(img, bins_per_hist = 16):
     RETURN:
     - A numpy array of shape (bins_per_hist * bins_per_hist * 3,)
     """
+    blue, green, red = cv2.split(img)
     histograms = np.zeros((3, bins_per_hist * bins_per_hist))
-    h = cv2.calcHist([img],[0,1],None, [bins_per_hist, bins_per_hist], ranges = [0,255,0,255]) #R/G
+
+    h = cv2.calcHist([blue, green],[0,1],None, [bins_per_hist, bins_per_hist], ranges = [0,255,0,255]) # B/G
     histograms[0,:] = h.flatten()/np.linalg.norm(h.flatten())
-    h = cv2.calcHist([img],[0,2],None, [bins_per_hist, bins_per_hist], ranges = [0,255,0,255]) #R/B
-    histograms[1,:]=  h.flatten()/np.linalg.norm(h.flatten())
-    h =  cv2.calcHist([img],[1,2],None, [bins_per_hist, bins_per_hist], ranges= [0,255,0,255]) #G/B
-    histograms[2,:]=  h.flatten()/np.linalg.norm(h.flatten())
+
+    h = cv2.calcHist([blue, red],[0,1],None, [bins_per_hist, bins_per_hist], ranges = [0,255,0,255]) # B/R
+    histograms[1,:] = h.flatten()/np.linalg.norm(h.flatten())
+
+    h = cv2.calcHist([green, red],[0,1],None, [bins_per_hist, bins_per_hist], ranges = [0,255,0,255]) # G/R
+    histograms[2,:] = h.flatten()/np.linalg.norm(h.flatten())
 
 
     # YOUR CODE HERE
@@ -301,7 +305,4 @@ def evaluate(dataset, method='SIFT', nfeats=3000, thresh=25, ratio=0.75):
     Returns:
         float: The mean Average Precision (mAP) score for the retrieval system.
     """
-    
-    # YOUR CODE HERE
-    raise NotImplementedError()
-    # -----
+    images = load
