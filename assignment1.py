@@ -67,7 +67,7 @@ def compute_lbp_descriptor(img, p = 8, r = 1):
     """    
     gray_image = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     lbp = skfeat.local_binary_pattern(gray_image,p,r,'uniform')
-    h,_ = np.histogram(lbp.ravel(), bins = p + 2, range = (0,(p+2)))
+    h,_ = np.histogram(lbp.ravel(), bins = p + 2, range = (0,p+2), density=True)
     return h
 
 
@@ -245,31 +245,16 @@ def find_matches(query_desc, database_desc, k=2):
     - matches (list of list of cv2.DMatch): A list where each element contains k matches,
       sorted by distance.
     """
-    matcher = cv2.BFMatcher_create()
-    matches = matcher.knnMatch(query_desc, database_desc, k)
-    return matches
+    if(query_desc[0].dtype=='float32'):
+        matcher = cv2.FlannBasedMatcher()
+        matches = matcher.knnMatch(query_desc, database_desc, k)
+        return matches
+    else:
+        matcher = cv2.BFMatcher_create()
+        matches = matcher.knnMatch(query_desc, database_desc, k)
+        return matches
 
-def find_matches(query_desc, database_desc, k=2):
-    """
-    Match two sets of descriptors. For each query descriptor, this method searches
-    for the k closest descriptors in the database set.
-  
-    Parameters:
-    - query_desc (np.ndarray): A NumPy array of shape (num_query_kps, descriptor_size),
-      containing descriptors from the query image.
-    - database_desc (np.ndarray): A NumPy array of shape (num_database_kps, descriptor_size),
-      containing descriptors from the database image.
-    - k (int): Number of nearest neighbors to retrieve for each descriptor (default: 2).
-  
-    Returns:
-    - matches (list of list of cv2.DMatch): A list where each element contains k matches,
-      sorted by distance.
-    """
-    matcher = cv2.FlannBasedMatcher()
-    matches = matcher.knnMatch(query_desc, database_desc, k)
-    return matches
     
-
 def filter_matches(matches, ratio=0.75):
     """
     Filters matches using the Nearest Neighbor Distance Ratio (NNDR) criterion.
