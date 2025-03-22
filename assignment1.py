@@ -225,4 +225,103 @@ def evaluate(dataset, method='SIFT', nfeats=3000, thresh=25, ratio=0.75):
     Returns:
         float: The mean Average Precision (mAP) score for the retrieval system.
     """
-    images = load
+    
+
+#########################################################################################
+#                                                                                       #
+#                                   CUSTOM METHODS                                      #
+#                                                                                       #
+#########################################################################################                                             
+
+
+def load_query_images(holidays_dataset):
+    """
+    Retrieve a dictionary with the query images.
+
+    Returns:
+
+        dict: A dict with the query image names as keys and np.arrays storing the corresponding images as values
+
+    Custom method.
+    """
+    return {name: holidays_dataset.get_image(name) for name in holidays_dataset.get_query_images()}
+
+def load_database_images(holidays_dataset):
+    """
+    Retrieve a dictionary with the database images.
+
+    Returns:
+
+        dict: A dict with the database image names as keys and np.arrays storing the corresponding images as values
+
+    Custom method.
+    """
+    return {name: holidays_dataset.get_image(name) for name in holidays_dataset.get_database_images()}
+
+def search_sorted_image(cbir_instance, query_descriptor):
+    """
+    Search an image in the system and return a sorted list of matches.
+
+    - query_descriptor: Global descriptor of the query image (NumPy array)
+
+    RETURNS:
+
+    - A list of the names of the images in the database, sorted from most to least similar to the query descriptor.
+
+    Custom method.
+    """
+    return [name for name, _ in cbir_instance.search_image(query_descriptor)]
+
+def search_image_from_value(cbir_instance, query_image):
+    """
+    Search an image in the system.
+
+    - query_image: The image to be searched (NumPy array)
+
+    RETURNS:
+
+    - An sorted list of tuples, each one with the format (database image name, L2 distance)
+
+    Custom method.
+    """
+    query_descriptor = cbir_instance.desc_func(query_image, **cbir_instance.params)
+    return cbir_instance.search_image(query_descriptor)
+
+def search_sorted_from_value(cbir_instance, query_image):
+    """
+    Search an image in the system and return a sorted list of matches.
+
+    - query_image: The image to be searched (NumPy array)
+
+    RETURNS:
+
+    - A list of the names of the images in the database, sorted from most to least similar to the query image.
+
+    Custom method.
+    """
+    return [name for name, _ in search_image_from_value(cbir_instance,query_image)]
+
+def compute_mAP(cbir_instance, dataset_handler):
+    """
+    Load a database into the instance and compute the mAP for that database.
+
+    - dataset_handler: The handler for the database to be used. It should have `load_database_images` and
+        `load_query_images` methods, each returning a dictionary with the image names as keys and the actual
+        images as values, regarding the training and test sets, respectively. 
+
+    RETURNS:
+
+    - The mean average precision of the current instance for the dataset provided.
+
+    Custom method.
+    """
+    images = load_database_images(dataset_handler)
+    cbir_instance.build_image_db(images)
+    query_images = load_query_images(dataset_handler)
+
+    ranked_dict = {
+        name: search_sorted_from_value(cbir_instance,img)
+        for name, img in query_images.items()
+    }
+
+    return dataset_handler.compute_mAP(ranked_dict)
