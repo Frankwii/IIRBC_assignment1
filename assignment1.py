@@ -6,7 +6,7 @@ from holidays_dataset_handler import HolidaysDatasetHandler
 from typing import Any, Callable
 from itertools import product
 
-def compute_1d_color_hist(img, bins_per_hist = 32, norm_p=2):
+def compute_1d_color_hist(img, bins_per_hist = 32):
     """
     Compute a 1d color histogram of the image.
   
@@ -16,13 +16,12 @@ def compute_1d_color_hist(img, bins_per_hist = 32, norm_p=2):
     RETURN: 
     - A numpy array of shape (bins_per_hist * 3,)
     """
-    
     histograms = np.zeros((3, bins_per_hist))
 
     for i in range(3):
 
         h, _ = np.histogram(img[:,:,i], bins = bins_per_hist, range = (0,255))
-        histograms[i, :] = h/np.linalg.norm(h, norm_p)
+        histograms[i, :] = h/np.linalg.norm(h)
         
     return histograms.flatten()
 
@@ -51,10 +50,8 @@ def compute_2d_color_hist(img, bins_per_hist = 16):
     h = cv2.calcHist([green, red],[0,1],None, [bins_per_hist, bins_per_hist], ranges = [0,255,0,255]) # G/R
     histograms[2,:] = h.flatten()/np.linalg.norm(h.flatten())
 
-
-    # YOUR CODE HERE
     return histograms.flatten()
-    # -----
+
 
 
 def compute_lbp_descriptor(img, p = 8, r = 1):
@@ -392,8 +389,8 @@ class GlobalCBIR(AbstractCBIR):
         
         diff = np.abs(query_descriptor - key_descriptor)
         
-        return np.pow(np.sum(
-            np.pow(diff, p)
+        return np.power(np.sum(
+            np.power(diff, p)
         ), 1/p)
         
 class LocalCBIR(AbstractCBIR):
