@@ -1,0 +1,290 @@
+[
+    {
+        "mAP": 0.8049707602339181,
+        "method": "SIFT",
+        "execution_time_ms": 41618.956327438354,
+        "nfeats": 1000,
+        "thresh": 50,
+        "ratio": 0.6
+    },
+    {
+        "mAP": 0.8031087333718913,
+        "method": "SIFT",
+        "execution_time_ms": 38948.67157936096,
+        "nfeats": 1000,
+        "thresh": 25,
+        "ratio": 0.6
+    },
+    {
+        "mAP": 0.7532685881370091,
+        "method": "SIFT",
+        "execution_time_ms": 36053.250551223755,
+        "nfeats": 500,
+        "thresh": 50,
+        "ratio": 0.6
+    },
+    {
+        "mAP": 0.7416894508999772,
+        "method": "SIFT",
+        "execution_time_ms": 41476.2659072876,
+        "nfeats": 1000,
+        "thresh": 25,
+        "ratio": 0.75
+    },
+    {
+        "mAP": 0.712280701754386,
+        "method": "SIFT",
+        "execution_time_ms": 37807.30485916138,
+        "nfeats": 500,
+        "thresh": 25,
+        "ratio": 0.6
+    },
+    {
+        "mAP": 0.6946755475645636,
+        "method": "SIFT",
+        "execution_time_ms": 40387.115478515625,
+        "nfeats": 1000,
+        "thresh": 50,
+        "ratio": 0.75
+    },
+    {
+        "mAP": 0.6677128427128427,
+        "method": "SIFT",
+        "execution_time_ms": 36074.92709159851,
+        "nfeats": 500,
+        "thresh": 50,
+        "ratio": 0.75
+    },
+    {
+        "mAP": 0.6581167831860353,
+        "method": "SIFT",
+        "execution_time_ms": 34047.14560508728,
+        "nfeats": 500,
+        "thresh": 25,
+        "ratio": 0.75
+    },
+    {
+        "mAP": 0.6481672006048737,
+        "method": "SIFT",
+        "execution_time_ms": 40066.43891334534,
+        "nfeats": 100,
+        "thresh": 25,
+        "ratio": 0.6
+    },
+    {
+        "mAP": 0.6479837121942386,
+        "method": "SIFT",
+        "execution_time_ms": 35466.2549495697,
+        "nfeats": 100,
+        "thresh": 50,
+        "ratio": 0.6
+    },
+    {
+        "mAP": 0.5614838377996273,
+        "method": "SIFT",
+        "execution_time_ms": 36926.79023742676,
+        "nfeats": 100,
+        "thresh": 50,
+        "ratio": 0.75
+    },
+    {
+        "mAP": 0.5375124509992929,
+        "method": "SIFT",
+        "execution_time_ms": 32757.047653198242,
+        "nfeats": 100,
+        "thresh": 25,
+        "ratio": 0.75
+    },
+    {
+        "mAP": 0.7532496012759171,
+        "method": "FAST_BRIEF",
+        "execution_time_ms": 826946.7496871948,
+        "nfeats": 100,
+        "thresh": 25,
+        "ratio": 0.75
+    },
+    {
+        "mAP": 0.7532496012759171,
+        "method": "FAST_BRIEF",
+        "execution_time_ms": 836297.205209732,
+        "nfeats": 500,
+        "thresh": 25,
+        "ratio": 0.75
+    },
+    {
+        "mAP": 0.7532496012759171,
+        "method": "FAST_BRIEF",
+        "execution_time_ms": 748326.7765045166,
+        "nfeats": 1000,
+        "thresh": 25,
+        "ratio": 0.75
+    },
+    {
+        "mAP": 0.7513017168589924,
+        "method": "FAST_BRIEF",
+        "execution_time_ms": 764148.6473083496,
+        "nfeats": 100,
+        "thresh": 25,
+        "ratio": 0.6
+    },
+    {
+        "mAP": 0.7513017168589924,
+        "method": "FAST_BRIEF",
+        "execution_time_ms": 841843.3563709259,
+        "nfeats": 500,
+        "thresh": 25,
+        "ratio": 0.6
+    },
+    {
+        "mAP": 0.7513017168589924,
+        "method": "FAST_BRIEF",
+        "execution_time_ms": 784431.8940639496,
+        "nfeats": 1000,
+        "thresh": 25,
+        "ratio": 0.6
+    },
+    {
+        "mAP": 0.41547066194899007,
+        "method": "FAST_BRIEF",
+        "execution_time_ms": 27643.696069717407,
+        "nfeats": 100,
+        "thresh": 50,
+        "ratio": 0.75
+    },
+    {
+        "mAP": 0.41547066194899007,
+        "method": "FAST_BRIEF",
+        "execution_time_ms": 27305.527687072754,
+        "nfeats": 500,
+        "thresh": 50,
+        "ratio": 0.75
+    },
+    {
+        "mAP": 0.41547066194899007,
+        "method": "FAST_BRIEF",
+        "execution_time_ms": 24599.84540939331,
+        "nfeats": 1000,
+        "thresh": 50,
+        "ratio": 0.75
+    },
+    {
+        "mAP": 0.39777111792987074,
+        "method": "FAST_BRIEF",
+        "execution_time_ms": 27537.330150604248,
+        "nfeats": 100,
+        "thresh": 50,
+        "ratio": 0.6
+    },
+    {
+        "mAP": 0.39777111792987074,
+        "method": "FAST_BRIEF",
+        "execution_time_ms": 27145.861387252808,
+        "nfeats": 500,
+        "thresh": 50,
+        "ratio": 0.6
+    },
+    {
+        "mAP": 0.39777111792987074,
+        "method": "FAST_BRIEF",
+        "execution_time_ms": 25334.846258163452,
+        "nfeats": 1000,
+        "thresh": 50,
+        "ratio": 0.6
+    },
+    {
+        "mAP": 0.6492468058257532,
+        "method": "ORB",
+        "execution_time_ms": 4509.848117828369,
+        "nfeats": 1000,
+        "thresh": 25,
+        "ratio": 0.75
+    },
+    {
+        "mAP": 0.5655058900956569,
+        "method": "ORB",
+        "execution_time_ms": 3196.584463119507,
+        "nfeats": 500,
+        "thresh": 25,
+        "ratio": 0.6
+    },
+    {
+        "mAP": 0.552143516686453,
+        "method": "ORB",
+        "execution_time_ms": 3955.796718597412,
+        "nfeats": 1000,
+        "thresh": 25,
+        "ratio": 0.6
+    },
+    {
+        "mAP": 0.5431502271827183,
+        "method": "ORB",
+        "execution_time_ms": 2551.088809967041,
+        "nfeats": 500,
+        "thresh": 50,
+        "ratio": 0.6
+    },
+    {
+        "mAP": 0.5351761757334512,
+        "method": "ORB",
+        "execution_time_ms": 3472.9056358337402,
+        "nfeats": 1000,
+        "thresh": 50,
+        "ratio": 0.75
+    },
+    {
+        "mAP": 0.5125635485708081,
+        "method": "ORB",
+        "execution_time_ms": 2941.969871520996,
+        "nfeats": 1000,
+        "thresh": 50,
+        "ratio": 0.6
+    },
+    {
+        "mAP": 0.5006775245476619,
+        "method": "ORB",
+        "execution_time_ms": 3788.877248764038,
+        "nfeats": 500,
+        "thresh": 25,
+        "ratio": 0.75
+    },
+    {
+        "mAP": 0.49170482452990183,
+        "method": "ORB",
+        "execution_time_ms": 2827.291488647461,
+        "nfeats": 100,
+        "thresh": 25,
+        "ratio": 0.75
+    },
+    {
+        "mAP": 0.47983801474085813,
+        "method": "ORB",
+        "execution_time_ms": 2574.572801589966,
+        "nfeats": 500,
+        "thresh": 50,
+        "ratio": 0.75
+    },
+    {
+        "mAP": 0.43103230991001884,
+        "method": "ORB",
+        "execution_time_ms": 1971.8048572540283,
+        "nfeats": 100,
+        "thresh": 50,
+        "ratio": 0.75
+    },
+    {
+        "mAP": 0.40321014398116334,
+        "method": "ORB",
+        "execution_time_ms": 3525.7041454315186,
+        "nfeats": 100,
+        "thresh": 25,
+        "ratio": 0.6
+    },
+    {
+        "mAP": 0.40321014398116334,
+        "method": "ORB",
+        "execution_time_ms": 2559.7455501556396,
+        "nfeats": 100,
+        "thresh": 50,
+        "ratio": 0.6
+    }
+]
