@@ -90,7 +90,7 @@ class CBIR:
         self.params = params
         self.image_descriptors = {}
         
-    def build_image_db(self, images: dict):
+    def build_image_db(self, images):
         """
         Create the CBIR system database.
         
@@ -180,11 +180,11 @@ def find_matches(query_desc, database_desc, k=2):
     - matches (list of list of cv2.DMatch): A list where each element contains k matches,
       sorted by distance.
     """
-    matcher = cv2.FlannBasedMatcher() if query_desc[0].dtype=='float32' else cv2.BFMatcher_create()
+    matcher = cv2.FlannBasedMatcher() if query_desc[0].dtype=='float32' else cv2.BFMatcher()
 
     return matcher.knnMatch(query_desc, database_desc, k)
 
-    
+
 def filter_matches(matches, ratio=0.75):
     """
     Filters matches using the Nearest Neighbor Distance Ratio (NNDR) criterion.
@@ -217,8 +217,7 @@ def evaluate(dataset, method='SIFT', nfeats=3000, thresh=25, ratio=0.75):
         float: The mean Average Precision (mAP) score for the retrieval system.
     """
 
-    params = {'nfeats':nfeats, 'thresh':thresh, 'ratio':ratio}
-    retriever = LocalCBIR(method, **params)
+    retriever = LocalCBIR(method, nfeats=nfeats, thresh=thresh, ratio=ratio)
     
     return retriever.compute_mAP(dataset)
     
@@ -251,6 +250,7 @@ class DatasetHandler(HolidaysDatasetHandler):
         Custom method.
         """
         return {name: self.get_image(name) for name in self.get_database_images()}
+
 
 from abc import ABC, abstractmethod
 class AbstractCBIR(ABC):
@@ -352,8 +352,8 @@ class AbstractCBIR(ABC):
 
         Custom method.
         """
-        images = dataset_handler.load_database_images()
         if not self.image_descriptors:
+            images = dataset_handler.load_database_images()
             self.build_image_db(images)
 
         query_images = dataset_handler.load_query_images()
@@ -362,9 +362,29 @@ class AbstractCBIR(ABC):
             name: self.rank_database_from_image(img)
             for name, img in query_images.items()
         }
- 
+
         return dataset_handler.compute_mAP(ranked_dict)
-    
+
+    def compute_feature_lengths(self, dataset_handler: DatasetHandler = None):
+        """
+        Load a database into the instance and compute the mAP for that database.
+
+        - dataset_handler: The handler for the database to be used. It should have `load_database_images` and
+          `load_query_images` methods, each returning a dictionary with the image names as keys and the actual
+          images as values, regarding the training and test sets, respectively.
+
+        RETURNS:
+
+        - The mean average precision of the current instance for the dataset provided.
+
+        Custom method.
+        """
+        if not self.image_descriptors:
+            images = dataset_handler.load_database_images()
+            self.build_image_db(images)
+
+        return {name:len(descriptor) for name, descriptor in self.image_descriptors.items()}
+
 class GlobalCBIR(AbstractCBIR):
     def __init__(self, desc_func, **kwargs):
         """
@@ -386,13 +406,9 @@ class GlobalCBIR(AbstractCBIR):
             Computes the p-norm among the global descriptors. Specify p as a parameter (default is 2)
         """
         p: float = self.params.get('norm_p') or 2
-        
-        diff = np.abs(query_descriptor - key_descriptor)
-        
-        return np.power(np.sum(
-            np.power(diff, p)
-        ), 1/p)
-        
+
+        return np.linalg.norm(query_descriptor - key_descriptor, p)
+
 class LocalCBIR(AbstractCBIR):
     def __init__(self, feat_type, **kwargs):
         super().__init__(**kwargs)
@@ -408,7 +424,7 @@ class LocalCBIR(AbstractCBIR):
         if key_descriptor is None:
             key_descriptor = []
 
-        if len(query_descriptor) + len(key_descriptor) == 0:
+        if len(query_descriptor) * len(key_descriptor) == 0:
             return 0
 
         num_matches = len(filter_matches(find_matches(query_descriptor, key_descriptor), ratio=self.ratio))
@@ -447,9 +463,9 @@ def benchmark_ms(f: Callable, *args, **kwargs):
     value = f(*args, **kwargs)
     elapsed = time.time() - previous_time
 
-    return value, elapsed * 1000
+    return elapsed * 1000, value
 
-def evaluate_and_benchmark_in_all_combinations (function: Callable[Any, float], parameter_lists: dict[str, list]) -> list[tuple[dict[str, Any], float, float]]:
+def evaluate_and_benchmark_in_all_combinations(function: Callable[Any, float], parameter_lists: dict[str, list]) -> list[dict[str, Any]]:
     """
     Args:
         function: A callable function that computes yields the mAP of a CBIR system given its parameters.
@@ -465,8 +481,9 @@ def evaluate_and_benchmark_in_all_combinations (function: Callable[Any, float], 
 
     for i in range(len(parameter_combinations)):
         params = parameter_combinations[i]
-        mAP, time_ms = benchmark_ms(function, **params)
-        results[i] = {"mAP":mAP , "execution_time_ms": time_ms, **params}
+        print(f"Trying parameter combination:\t{params}")
+        time_ms, (mAP, total_features) = benchmark_ms(function, **params)
+        results[i] = {"mAP":mAP , "execution_time_ms": time_ms, "total_features":total_features, **params}
 
     results.sort(key = lambda d: d["mAP"], reverse=True)
 
