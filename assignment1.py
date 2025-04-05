@@ -367,7 +367,7 @@ class AbstractCBIR(ABC):
 
     def compute_feature_lengths(self, dataset_handler: DatasetHandler = None):
         """
-        Load a database into the instance and compute the mAP for that database.
+        Computes the lengths of the descriptors for all images in the database.
 
         - dataset_handler: The handler for the database to be used. It should have `load_database_images` and
           `load_query_images` methods, each returning a dictionary with the image names as keys and the actual
@@ -375,7 +375,7 @@ class AbstractCBIR(ABC):
 
         RETURNS:
 
-        - The mean average precision of the current instance for the dataset provided.
+        - A dictionary containing the lengths of the descriptors for all images in the database, with their names as keys.
 
         Custom method.
         """
@@ -444,16 +444,6 @@ def all_dict_combinations(d: dict[str, list])->list[dict]:
     keys = d.keys()
     
     return [dict(zip(keys, combination)) for combination in prod]
-
-def evaluate_in_all_combinations(function: Callable[Any, float], parameter_lists:dict[str, list])-> list[tuple[dict[str, Any], float]]:
-    """
-    Evaluates the function in all possible combinations of parameters and returns a list with the values and parameter combinations.
-    """
-    
-    values = [(params, function(**params)) for params in all_dict_combinations(parameter_lists)]
-    values.sort(key=lambda tup: tup[1], reverse=True)
-
-    return values
 
 def benchmark_ms(f: Callable, *args, **kwargs):
     """
