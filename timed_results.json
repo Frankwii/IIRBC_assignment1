@@ -1,290 +1,1766 @@
 [
     {
-        "mAP": 0.8049707602339181,
         "method": "SIFT",
-        "execution_time_ms": 41618.956327438354,
-        "nfeats": 1000,
-        "thresh": 50,
+        "mAP": 0.8923872180451128,
+        "execution_time_ms": 40482.3534488678,
+        "total_features": 54742,
+        "nfeats": 2000,
+        "thresh": 0,
         "ratio": 0.6
     },
     {
-        "mAP": 0.8031087333718913,
         "method": "SIFT",
-        "execution_time_ms": 38948.67157936096,
-        "nfeats": 1000,
-        "thresh": 25,
-        "ratio": 0.6
+        "mAP": 0.8379161287056024,
+        "execution_time_ms": 49719.36058998108,
+        "total_features": 101127,
+        "nfeats": 4000,
+        "thresh": 0,
+        "ratio": 0.5
     },
     {
-        "mAP": 0.7532685881370091,
         "method": "SIFT",
-        "execution_time_ms": 36053.250551223755,
-        "nfeats": 500,
-        "thresh": 50,
-        "ratio": 0.6
+        "mAP": 0.831766917293233,
+        "execution_time_ms": 38486.61494255066,
+        "total_features": 30362,
+        "nfeats": 1000,
+        "thresh": 0,
+        "ratio": 0.7
     },
     {
-        "mAP": 0.7416894508999772,
         "method": "SIFT",
-        "execution_time_ms": 41476.2659072876,
-        "nfeats": 1000,
-        "thresh": 25,
-        "ratio": 0.75
+        "mAP": 0.8296778259878946,
+        "execution_time_ms": 48613.786697387695,
+        "total_features": 101127,
+        "nfeats": 4000,
+        "thresh": 0,
+        "ratio": 0.4
     },
     {
-        "mAP": 0.712280701754386,
         "method": "SIFT",
-        "execution_time_ms": 37807.30485916138,
-        "nfeats": 500,
-        "thresh": 25,
+        "mAP": 0.8286862990810359,
+        "execution_time_ms": 48260.823249816895,
+        "total_features": 101127,
+        "nfeats": 4000,
+        "thresh": 0,
         "ratio": 0.6
     },
     {
-        "mAP": 0.6946755475645636,
         "method": "SIFT",
-        "execution_time_ms": 40387.115478515625,
-        "nfeats": 1000,
-        "thresh": 50,
-        "ratio": 0.75
+        "mAP": 0.8178440442290856,
+        "execution_time_ms": 41134.94658470154,
+        "total_features": 54742,
+        "nfeats": 2000,
+        "thresh": 0,
+        "ratio": 0.5
     },
     {
-        "mAP": 0.6677128427128427,
         "method": "SIFT",
-        "execution_time_ms": 36074.92709159851,
-        "nfeats": 500,
-        "thresh": 50,
-        "ratio": 0.75
+        "mAP": 0.8090170278637772,
+        "execution_time_ms": 40639.612674713135,
+        "total_features": 54742,
+        "nfeats": 2000,
+        "thresh": 0,
+        "ratio": 0.7
     },
     {
-        "mAP": 0.6581167831860353,
         "method": "SIFT",
-        "execution_time_ms": 34047.14560508728,
-        "nfeats": 500,
-        "thresh": 25,
-        "ratio": 0.75
+        "mAP": 0.8001998463217299,
+        "execution_time_ms": 37054.04305458069,
+        "total_features": 30362,
+        "nfeats": 1000,
+        "thresh": 0,
+        "ratio": 0.5
     },
     {
-        "mAP": 0.6481672006048737,
         "method": "SIFT",
-        "execution_time_ms": 40066.43891334534,
-        "nfeats": 100,
-        "thresh": 25,
+        "mAP": 0.7956975772765246,
+        "execution_time_ms": 35664.331912994385,
+        "total_features": 30362,
+        "nfeats": 1000,
+        "thresh": 0,
         "ratio": 0.6
     },
     {
-        "mAP": 0.6479837121942386,
         "method": "SIFT",
-        "execution_time_ms": 35466.2549495697,
-        "nfeats": 100,
-        "thresh": 50,
-        "ratio": 0.6
+        "mAP": 0.7843561885609941,
+        "execution_time_ms": 40552.83308029175,
+        "total_features": 54742,
+        "nfeats": 2000,
+        "thresh": 0,
+        "ratio": 0.4
     },
     {
-        "mAP": 0.5614838377996273,
         "method": "SIFT",
-        "execution_time_ms": 36926.79023742676,
-        "nfeats": 100,
-        "thresh": 50,
+        "mAP": 0.7746449456975772,
+        "execution_time_ms": 40069.377422332764,
+        "total_features": 54742,
+        "nfeats": 2000,
+        "thresh": 0,
         "ratio": 0.75
     },
     {
-        "mAP": 0.5375124509992929,
         "method": "SIFT",
-        "execution_time_ms": 32757.047653198242,
-        "nfeats": 100,
-        "thresh": 25,
-        "ratio": 0.75
+        "mAP": 0.7582099187362344,
+        "execution_time_ms": 42474.005460739136,
+        "total_features": 54742,
+        "nfeats": 2000,
+        "thresh": 0,
+        "ratio": 0.8
     },
     {
-        "mAP": 0.7532496012759171,
-        "method": "FAST_BRIEF",
-        "execution_time_ms": 826946.7496871948,
-        "nfeats": 100,
-        "thresh": 25,
-        "ratio": 0.75
+        "method": "SIFT",
+        "mAP": 0.7403338985575828,
+        "execution_time_ms": 51113.83152008057,
+        "total_features": 101127,
+        "nfeats": 4000,
+        "thresh": 0,
+        "ratio": 0.7
     },
     {
-        "mAP": 0.7532496012759171,
-        "method": "FAST_BRIEF",
-        "execution_time_ms": 836297.205209732,
+        "method": "SIFT",
+        "mAP": 0.7386278195488721,
+        "execution_time_ms": 37185.29295921326,
+        "total_features": 15503,
         "nfeats": 500,
-        "thresh": 25,
-        "ratio": 0.75
+        "thresh": 0,
+        "ratio": 0.7
     },
     {
-        "mAP": 0.7532496012759171,
-        "method": "FAST_BRIEF",
-        "execution_time_ms": 748326.7765045166,
-        "nfeats": 1000,
-        "thresh": 25,
-        "ratio": 0.75
-    },
-    {
-        "mAP": 0.7513017168589924,
-        "method": "FAST_BRIEF",
-        "execution_time_ms": 764148.6473083496,
-        "nfeats": 100,
-        "thresh": 25,
-        "ratio": 0.6
-    },
-    {
-        "mAP": 0.7513017168589924,
-        "method": "FAST_BRIEF",
-        "execution_time_ms": 841843.3563709259,
+        "method": "SIFT",
+        "mAP": 0.7383772406083619,
+        "execution_time_ms": 39822.62063026428,
+        "total_features": 15503,
         "nfeats": 500,
-        "thresh": 25,
-        "ratio": 0.6
+        "thresh": 0,
+        "ratio": 0.5
     },
     {
-        "mAP": 0.7513017168589924,
-        "method": "FAST_BRIEF",
-        "execution_time_ms": 784431.8940639496,
-        "nfeats": 1000,
-        "thresh": 25,
-        "ratio": 0.6
-    },
-    {
-        "mAP": 0.41547066194899007,
-        "method": "FAST_BRIEF",
-        "execution_time_ms": 27643.696069717407,
-        "nfeats": 100,
-        "thresh": 50,
-        "ratio": 0.75
-    },
-    {
-        "mAP": 0.41547066194899007,
-        "method": "FAST_BRIEF",
-        "execution_time_ms": 27305.527687072754,
+        "method": "SIFT",
+        "mAP": 0.7334273182957393,
+        "execution_time_ms": 37689.23878669739,
+        "total_features": 15503,
         "nfeats": 500,
-        "thresh": 50,
+        "thresh": 0,
+        "ratio": 0.6
+    },
+    {
+        "method": "SIFT",
+        "mAP": 0.7211702501868706,
+        "execution_time_ms": 37319.76222991943,
+        "total_features": 30362,
+        "nfeats": 1000,
+        "thresh": 0,
         "ratio": 0.75
     },
     {
-        "mAP": 0.41547066194899007,
+        "method": "SIFT",
+        "mAP": 0.7110418090681249,
+        "execution_time_ms": 50698.203802108765,
+        "total_features": 101127,
+        "nfeats": 4000,
+        "thresh": 0,
+        "ratio": 0.75
+    },
+    {
+        "method": "SIFT",
+        "mAP": 0.6703543278486069,
+        "execution_time_ms": 36599.90739822388,
+        "total_features": 30362,
+        "nfeats": 1000,
+        "thresh": 0,
+        "ratio": 0.4
+    },
+    {
+        "method": "SIFT",
+        "mAP": 0.6600128887280591,
+        "execution_time_ms": 37259.51671600342,
+        "total_features": 30362,
+        "nfeats": 1000,
+        "thresh": 0,
+        "ratio": 0.9
+    },
+    {
+        "method": "SIFT",
+        "mAP": 0.6590761323598852,
+        "execution_time_ms": 36725.01611709595,
+        "total_features": 15503,
+        "nfeats": 500,
+        "thresh": 0,
+        "ratio": 0.4
+    },
+    {
+        "method": "SIFT",
+        "mAP": 0.6579900839054157,
+        "execution_time_ms": 37592.67282485962,
+        "total_features": 30362,
+        "nfeats": 1000,
+        "thresh": 0,
+        "ratio": 0.8
+    },
+    {
+        "method": "SIFT",
+        "mAP": 0.6517625649204597,
+        "execution_time_ms": 37110.05926132202,
+        "total_features": 15503,
+        "nfeats": 500,
+        "thresh": 0,
+        "ratio": 0.75
+    },
+    {
+        "method": "SIFT",
+        "mAP": 0.6509958608642819,
+        "execution_time_ms": 49214.10942077637,
+        "total_features": 101127,
+        "nfeats": 4000,
+        "thresh": 0,
+        "ratio": 0.8
+    },
+    {
+        "method": "SIFT",
+        "mAP": 0.6459786996629101,
+        "execution_time_ms": 36612.1621131897,
+        "total_features": 3116,
+        "nfeats": 100,
+        "thresh": 0,
+        "ratio": 0.6
+    },
+    {
+        "method": "SIFT",
+        "mAP": 0.6424587108797636,
+        "execution_time_ms": 40042.948722839355,
+        "total_features": 54742,
+        "nfeats": 2000,
+        "thresh": 0,
+        "ratio": 0.9
+    },
+    {
+        "method": "SIFT",
+        "mAP": 0.6384310436488295,
+        "execution_time_ms": 37895.347356796265,
+        "total_features": 15503,
+        "nfeats": 500,
+        "thresh": 0,
+        "ratio": 0.8
+    },
+    {
+        "method": "SIFT",
+        "mAP": 0.6175439072750286,
+        "execution_time_ms": 34796.003103256226,
+        "total_features": 3116,
+        "nfeats": 100,
+        "thresh": 0,
+        "ratio": 0.7
+    },
+    {
+        "method": "SIFT",
+        "mAP": 0.5976571460637864,
+        "execution_time_ms": 36149.922370910645,
+        "total_features": 15503,
+        "nfeats": 500,
+        "thresh": 0,
+        "ratio": 0.9
+    },
+    {
+        "method": "SIFT",
+        "mAP": 0.5971365194595685,
+        "execution_time_ms": 48230.17978668213,
+        "total_features": 101127,
+        "nfeats": 4000,
+        "thresh": 0,
+        "ratio": 0.9
+    },
+    {
+        "method": "SIFT",
+        "mAP": 0.5763116230473883,
+        "execution_time_ms": 35294.628858566284,
+        "total_features": 3116,
+        "nfeats": 100,
+        "thresh": 0,
+        "ratio": 0.5
+    },
+    {
+        "method": "SIFT",
+        "mAP": 0.5199979114452798,
+        "execution_time_ms": 34161.06176376343,
+        "total_features": 3116,
+        "nfeats": 100,
+        "thresh": 0,
+        "ratio": 0.75
+    },
+    {
+        "method": "SIFT",
+        "mAP": 0.5002388677513733,
+        "execution_time_ms": 40070.33967971802,
+        "total_features": 3116,
+        "nfeats": 100,
+        "thresh": 0,
+        "ratio": 0.4
+    },
+    {
+        "method": "SIFT",
+        "mAP": 0.4776486052086739,
+        "execution_time_ms": 34449.86939430237,
+        "total_features": 3116,
+        "nfeats": 100,
+        "thresh": 0,
+        "ratio": 0.8
+    },
+    {
+        "method": "SIFT",
+        "mAP": 0.46467932652143173,
+        "execution_time_ms": 36812.73651123047,
+        "total_features": 3116,
+        "nfeats": 100,
+        "thresh": 0,
+        "ratio": 0.9
+    },
+    {
         "method": "FAST_BRIEF",
-        "execution_time_ms": 24599.84540939331,
-        "nfeats": 1000,
-        "thresh": 50,
-        "ratio": 0.75
+        "mAP": 0.8781427382685963,
+        "execution_time_ms": 345260.8814239502,
+        "total_features": 1046110,
+        "nfeats": 0,
+        "thresh": 32,
+        "ratio": 0.4
     },
     {
-        "mAP": 0.39777111792987074,
         "method": "FAST_BRIEF",
-        "execution_time_ms": 27537.330150604248,
-        "nfeats": 100,
-        "thresh": 50,
-        "ratio": 0.6
+        "mAP": 0.8641076505492982,
+        "execution_time_ms": 343241.6298389435,
+        "total_features": 1046110,
+        "nfeats": 0,
+        "thresh": 64,
+        "ratio": 0.4
     },
     {
-        "mAP": 0.39777111792987074,
         "method": "FAST_BRIEF",
-        "execution_time_ms": 27145.861387252808,
-        "nfeats": 500,
-        "thresh": 50,
+        "mAP": 0.8567355889724312,
+        "execution_time_ms": 345453.0327320099,
+        "total_features": 1046110,
+        "nfeats": 0,
+        "thresh": 64,
         "ratio": 0.6
     },
     {
-        "mAP": 0.39777111792987074,
         "method": "FAST_BRIEF",
-        "execution_time_ms": 25334.846258163452,
+        "mAP": 0.8468636626531364,
+        "execution_time_ms": 344505.17559051514,
+        "total_features": 1046110,
+        "nfeats": 0,
+        "thresh": 75,
+        "ratio": 0.5
+    },
+    {
+        "method": "FAST_BRIEF",
+        "mAP": 0.8443404183535762,
+        "execution_time_ms": 345060.07647514343,
+        "total_features": 1046110,
+        "nfeats": 0,
+        "thresh": 32,
+        "ratio": 0.5
+    },
+    {
+        "method": "FAST_BRIEF",
+        "mAP": 0.841203007518797,
+        "execution_time_ms": 345635.3738307953,
+        "total_features": 1046110,
+        "nfeats": 0,
+        "thresh": 64,
+        "ratio": 0.5
+    },
+    {
+        "method": "FAST_BRIEF",
+        "mAP": 0.8408620365142104,
+        "execution_time_ms": 343818.81642341614,
+        "total_features": 1046110,
+        "nfeats": 0,
+        "thresh": 75,
+        "ratio": 0.4
+    },
+    {
+        "method": "FAST_BRIEF",
+        "mAP": 0.8110407597942224,
+        "execution_time_ms": 343714.65134620667,
+        "total_features": 1046110,
+        "nfeats": 0,
+        "thresh": 75,
+        "ratio": 0.6
+    },
+    {
+        "method": "FAST_BRIEF",
+        "mAP": 0.8055764411027568,
+        "execution_time_ms": 344013.08488845825,
+        "total_features": 1046110,
+        "nfeats": 0,
+        "thresh": 32,
+        "ratio": 0.6
+    },
+    {
+        "method": "FAST_BRIEF",
+        "mAP": 0.7692564745196324,
+        "execution_time_ms": 343851.7634868622,
+        "total_features": 1046110,
+        "nfeats": 0,
+        "thresh": 75,
+        "ratio": 0.7
+    },
+    {
+        "method": "FAST_BRIEF",
+        "mAP": 0.7685691501480975,
+        "execution_time_ms": 345014.7535800934,
+        "total_features": 1046110,
+        "nfeats": 0,
+        "thresh": 32,
+        "ratio": 0.7
+    },
+    {
+        "method": "FAST_BRIEF",
+        "mAP": 0.7639149958228905,
+        "execution_time_ms": 347595.9529876709,
+        "total_features": 1046110,
+        "nfeats": 0,
+        "thresh": 64,
+        "ratio": 0.7
+    },
+    {
+        "method": "FAST_BRIEF",
+        "mAP": 0.7234250398724082,
+        "execution_time_ms": 344256.9591999054,
+        "total_features": 1046110,
+        "nfeats": 0,
+        "thresh": 32,
+        "ratio": 0.75
+    },
+    {
+        "method": "FAST_BRIEF",
+        "mAP": 0.7218515037593985,
+        "execution_time_ms": 343727.7686595917,
+        "total_features": 1046110,
+        "nfeats": 0,
+        "thresh": 64,
+        "ratio": 0.75
+    },
+    {
+        "method": "FAST_BRIEF",
+        "mAP": 0.7206975772765246,
+        "execution_time_ms": 345559.63373184204,
+        "total_features": 1046110,
+        "nfeats": 0,
+        "thresh": 75,
+        "ratio": 0.75
+    },
+    {
+        "method": "FAST_BRIEF",
+        "mAP": 0.7153508771929824,
+        "execution_time_ms": 344742.919921875,
+        "total_features": 1046110,
+        "nfeats": 0,
+        "thresh": 32,
+        "ratio": 0.8
+    },
+    {
+        "method": "FAST_BRIEF",
+        "mAP": 0.7098579782790309,
+        "execution_time_ms": 343479.3815612793,
+        "total_features": 1046110,
+        "nfeats": 0,
+        "thresh": 75,
+        "ratio": 0.8
+    },
+    {
+        "method": "FAST_BRIEF",
+        "mAP": 0.698015873015873,
+        "execution_time_ms": 344972.82242774963,
+        "total_features": 1046110,
+        "nfeats": 0,
+        "thresh": 64,
+        "ratio": 0.8
+    },
+    {
+        "method": "FAST_BRIEF",
+        "mAP": 0.6941349586086428,
+        "execution_time_ms": 344597.22566604614,
+        "total_features": 1046110,
+        "nfeats": 0,
+        "thresh": 75,
+        "ratio": 0.9
+    },
+    {
+        "method": "FAST_BRIEF",
+        "mAP": 0.6732683982683982,
+        "execution_time_ms": 343492.58303642273,
+        "total_features": 1046110,
+        "nfeats": 0,
+        "thresh": 64,
+        "ratio": 0.9
+    },
+    {
+        "method": "FAST_BRIEF",
+        "mAP": 0.6565966197545144,
+        "execution_time_ms": 342868.5030937195,
+        "total_features": 1046110,
+        "nfeats": 0,
+        "thresh": 32,
+        "ratio": 0.9
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.877754731656728,
+        "execution_time_ms": 40508.50486755371,
+        "total_features": 181145,
+        "nfeats": 8000,
+        "thresh": 32,
+        "ratio": 0.75
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.8601503759398496,
+        "execution_time_ms": 59889.29080963135,
+        "total_features": 225657,
+        "nfeats": 8000,
+        "thresh": 16,
+        "ratio": 0.75
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.8515873015873016,
+        "execution_time_ms": 40613.044023513794,
+        "total_features": 181145,
+        "nfeats": 8000,
+        "thresh": 32,
+        "ratio": 0.8
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.8367425917735515,
+        "execution_time_ms": 14581.985473632812,
+        "total_features": 101540,
+        "nfeats": 4000,
+        "thresh": 32,
+        "ratio": 0.7
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.8330896686159844,
+        "execution_time_ms": 56792.79112815857,
+        "total_features": 216986,
+        "nfeats": 10000,
+        "thresh": 32,
+        "ratio": 0.75
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.8257663389242336,
+        "execution_time_ms": 60365.43583869934,
+        "total_features": 225657,
+        "nfeats": 8000,
+        "thresh": 16,
+        "ratio": 0.8
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.822328548644338,
+        "execution_time_ms": 40598.27470779419,
+        "total_features": 181145,
+        "nfeats": 8000,
+        "thresh": 32,
+        "ratio": 0.7
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.8159164880527109,
+        "execution_time_ms": 56734.912157058716,
+        "total_features": 216986,
+        "nfeats": 10000,
+        "thresh": 32,
+        "ratio": 0.7
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.8157669815564552,
+        "execution_time_ms": 86610.86344718933,
+        "total_features": 273628,
+        "nfeats": 10000,
+        "thresh": 16,
+        "ratio": 0.8
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.8140664160401002,
+        "execution_time_ms": 14660.321950912476,
+        "total_features": 101540,
+        "nfeats": 4000,
+        "thresh": 32,
+        "ratio": 0.8
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.8090089004562688,
+        "execution_time_ms": 20104.042530059814,
+        "total_features": 121472,
+        "nfeats": 4000,
+        "thresh": 16,
+        "ratio": 0.8
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.8034461152882205,
+        "execution_time_ms": 56885.79034805298,
+        "total_features": 216986,
+        "nfeats": 10000,
+        "thresh": 32,
+        "ratio": 0.8
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.7814954051796156,
+        "execution_time_ms": 6660.068035125732,
+        "total_features": 57109,
+        "nfeats": 2000,
+        "thresh": 32,
+        "ratio": 0.75
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.7755082149818991,
+        "execution_time_ms": 14585.56604385376,
+        "total_features": 101540,
+        "nfeats": 4000,
+        "thresh": 32,
+        "ratio": 0.75
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.7746549234083859,
+        "execution_time_ms": 8445.038795471191,
+        "total_features": 62000,
+        "nfeats": 2000,
+        "thresh": 16,
+        "ratio": 0.7
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.7731829573934836,
+        "execution_time_ms": 6779.935359954834,
+        "total_features": 57109,
+        "nfeats": 2000,
+        "thresh": 32,
+        "ratio": 0.7
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.7710275796054501,
+        "execution_time_ms": 19485.827922821045,
+        "total_features": 121472,
+        "nfeats": 4000,
+        "thresh": 16,
+        "ratio": 0.7
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.768671679197995,
+        "execution_time_ms": 86514.56427574158,
+        "total_features": 273628,
+        "nfeats": 10000,
+        "thresh": 16,
+        "ratio": 0.75
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.7649436090225564,
+        "execution_time_ms": 19810.418844223022,
+        "total_features": 121472,
+        "nfeats": 4000,
+        "thresh": 16,
+        "ratio": 0.75
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.7553516143299426,
+        "execution_time_ms": 87323.3654499054,
+        "total_features": 273628,
+        "nfeats": 10000,
+        "thresh": 16,
+        "ratio": 0.7
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.7507205513784462,
+        "execution_time_ms": 86818.02034378052,
+        "total_features": 273628,
+        "nfeats": 10000,
+        "thresh": 16,
+        "ratio": 0.6
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.7501638712165029,
+        "execution_time_ms": 59956.12072944641,
+        "total_features": 225657,
+        "nfeats": 8000,
+        "thresh": 16,
+        "ratio": 0.7
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.7422533606744134,
+        "execution_time_ms": 57265.10572433472,
+        "total_features": 216986,
+        "nfeats": 10000,
+        "thresh": 32,
+        "ratio": 0.6
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.7422470336742689,
+        "execution_time_ms": 3878.3342838287354,
+        "total_features": 30591,
         "nfeats": 1000,
-        "thresh": 50,
+        "thresh": 32,
+        "ratio": 0.7
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.7371611901294003,
+        "execution_time_ms": 14246.08850479126,
+        "total_features": 101540,
+        "nfeats": 4000,
+        "thresh": 32,
         "ratio": 0.6
     },
     {
-        "mAP": 0.6492468058257532,
         "method": "ORB",
-        "execution_time_ms": 4509.848117828369,
+        "mAP": 0.7308175742386268,
+        "execution_time_ms": 4563.62771987915,
+        "total_features": 31000,
         "nfeats": 1000,
-        "thresh": 25,
-        "ratio": 0.75
+        "thresh": 16,
+        "ratio": 0.7
     },
     {
-        "mAP": 0.5655058900956569,
         "method": "ORB",
-        "execution_time_ms": 3196.584463119507,
-        "nfeats": 500,
-        "thresh": 25,
+        "mAP": 0.727548036758563,
+        "execution_time_ms": 86488.37780952454,
+        "total_features": 273628,
+        "nfeats": 10000,
+        "thresh": 16,
+        "ratio": 0.9
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.7231448011053273,
+        "execution_time_ms": 60076.98702812195,
+        "total_features": 225657,
+        "nfeats": 8000,
+        "thresh": 16,
         "ratio": 0.6
     },
     {
-        "mAP": 0.552143516686453,
         "method": "ORB",
-        "execution_time_ms": 3955.796718597412,
+        "mAP": 0.7221500721500721,
+        "execution_time_ms": 40336.20476722717,
+        "total_features": 181145,
+        "nfeats": 8000,
+        "thresh": 32,
+        "ratio": 0.6
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.718582341020014,
+        "execution_time_ms": 8059.94725227356,
+        "total_features": 62000,
+        "nfeats": 2000,
+        "thresh": 16,
+        "ratio": 0.75
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.7118553960659224,
+        "execution_time_ms": 19545.7866191864,
+        "total_features": 121472,
+        "nfeats": 4000,
+        "thresh": 16,
+        "ratio": 0.9
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.710725677830941,
+        "execution_time_ms": 60350.23522377014,
+        "total_features": 225657,
+        "nfeats": 8000,
+        "thresh": 16,
+        "ratio": 0.9
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.7022062732589048,
+        "execution_time_ms": 6710.071325302124,
+        "total_features": 57109,
+        "nfeats": 2000,
+        "thresh": 32,
+        "ratio": 0.8
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.7002701976386186,
+        "execution_time_ms": 56798.017501831055,
+        "total_features": 216986,
+        "nfeats": 10000,
+        "thresh": 32,
+        "ratio": 0.9
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.6950819886528464,
+        "execution_time_ms": 19718.650341033936,
+        "total_features": 121472,
+        "nfeats": 4000,
+        "thresh": 16,
+        "ratio": 0.6
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.6807117320967736,
+        "execution_time_ms": 40486.81044578552,
+        "total_features": 181145,
+        "nfeats": 8000,
+        "thresh": 32,
+        "ratio": 0.9
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.6771113389534442,
+        "execution_time_ms": 7772.871971130371,
+        "total_features": 62000,
+        "nfeats": 2000,
+        "thresh": 16,
+        "ratio": 0.8
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.676041064198959,
+        "execution_time_ms": 14447.80945777893,
+        "total_features": 101540,
+        "nfeats": 4000,
+        "thresh": 32,
+        "ratio": 0.9
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.6714197678813282,
+        "execution_time_ms": 56786.93342208862,
+        "total_features": 216986,
+        "nfeats": 10000,
+        "thresh": 32,
+        "ratio": 0.5
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.6694302437241165,
+        "execution_time_ms": 86632.45153427124,
+        "total_features": 273628,
+        "nfeats": 10000,
+        "thresh": 16,
+        "ratio": 0.5
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.6660818713450292,
+        "execution_time_ms": 7720.412015914917,
+        "total_features": 62000,
+        "nfeats": 2000,
+        "thresh": 16,
+        "ratio": 0.9
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.6560554942133889,
+        "execution_time_ms": 4696.59686088562,
+        "total_features": 31000,
         "nfeats": 1000,
-        "thresh": 25,
-        "ratio": 0.6
+        "thresh": 16,
+        "ratio": 0.75
     },
     {
-        "mAP": 0.5431502271827183,
         "method": "ORB",
-        "execution_time_ms": 2551.088809967041,
-        "nfeats": 500,
-        "thresh": 50,
-        "ratio": 0.6
+        "mAP": 0.6427340203655993,
+        "execution_time_ms": 6363.304615020752,
+        "total_features": 57109,
+        "nfeats": 2000,
+        "thresh": 32,
+        "ratio": 0.9
     },
     {
-        "mAP": 0.5351761757334512,
         "method": "ORB",
-        "execution_time_ms": 3472.9056358337402,
+        "mAP": 0.6390997525865947,
+        "execution_time_ms": 4190.697193145752,
+        "total_features": 30591,
         "nfeats": 1000,
-        "thresh": 50,
+        "thresh": 32,
         "ratio": 0.75
     },
     {
-        "mAP": 0.5125635485708081,
         "method": "ORB",
-        "execution_time_ms": 2941.969871520996,
+        "mAP": 0.6390589176058283,
+        "execution_time_ms": 7943.556070327759,
+        "total_features": 62000,
+        "nfeats": 2000,
+        "thresh": 16,
+        "ratio": 0.5
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.6390589176058283,
+        "execution_time_ms": 6204.274415969849,
+        "total_features": 57109,
+        "nfeats": 2000,
+        "thresh": 32,
+        "ratio": 0.5
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.6346793366816251,
+        "execution_time_ms": 40698.813915252686,
+        "total_features": 181145,
+        "nfeats": 8000,
+        "thresh": 32,
+        "ratio": 0.5
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.6340065850901764,
+        "execution_time_ms": 3869.3695068359375,
+        "total_features": 30591,
         "nfeats": 1000,
-        "thresh": 50,
+        "thresh": 32,
+        "ratio": 0.8
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.6315371762740184,
+        "execution_time_ms": 5550.179719924927,
+        "total_features": 31000,
+        "nfeats": 1000,
+        "thresh": 16,
+        "ratio": 0.8
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.6295607116346078,
+        "execution_time_ms": 19514.735460281372,
+        "total_features": 115817,
+        "nfeats": 10000,
+        "thresh": 64,
+        "ratio": 0.75
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.6272869803406388,
+        "execution_time_ms": 4329.948902130127,
+        "total_features": 38234,
+        "nfeats": 2000,
+        "thresh": 64,
+        "ratio": 0.7
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.6270473678368415,
+        "execution_time_ms": 19499.23849105835,
+        "total_features": 115817,
+        "nfeats": 10000,
+        "thresh": 64,
+        "ratio": 0.8
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.6244353609689363,
+        "execution_time_ms": 60142.38142967224,
+        "total_features": 225657,
+        "nfeats": 8000,
+        "thresh": 16,
+        "ratio": 0.5
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.6240450654301068,
+        "execution_time_ms": 6041.336536407471,
+        "total_features": 57109,
+        "nfeats": 2000,
+        "thresh": 32,
         "ratio": 0.6
     },
     {
-        "mAP": 0.5006775245476619,
         "method": "ORB",
-        "execution_time_ms": 3788.877248764038,
-        "nfeats": 500,
-        "thresh": 25,
+        "mAP": 0.6237192362884884,
+        "execution_time_ms": 15825.93297958374,
+        "total_features": 102021,
+        "nfeats": 8000,
+        "thresh": 64,
         "ratio": 0.75
     },
     {
-        "mAP": 0.49170482452990183,
         "method": "ORB",
-        "execution_time_ms": 2827.291488647461,
-        "nfeats": 100,
-        "thresh": 25,
-        "ratio": 0.75
+        "mAP": 0.6078000663779369,
+        "execution_time_ms": 86532.62042999268,
+        "total_features": 273628,
+        "nfeats": 10000,
+        "thresh": 16,
+        "ratio": 0.4
     },
     {
-        "mAP": 0.47983801474085813,
         "method": "ORB",
-        "execution_time_ms": 2574.572801589966,
-        "nfeats": 500,
-        "thresh": 50,
-        "ratio": 0.75
+        "mAP": 0.5986540847067162,
+        "execution_time_ms": 7431.951999664307,
+        "total_features": 66050,
+        "nfeats": 4000,
+        "thresh": 64,
+        "ratio": 0.8
     },
     {
-        "mAP": 0.43103230991001884,
         "method": "ORB",
-        "execution_time_ms": 1971.8048572540283,
-        "nfeats": 100,
-        "thresh": 50,
-        "ratio": 0.75
+        "mAP": 0.5944672286777549,
+        "execution_time_ms": 15777.186632156372,
+        "total_features": 102021,
+        "nfeats": 8000,
+        "thresh": 64,
+        "ratio": 0.8
     },
     {
-        "mAP": 0.40321014398116334,
         "method": "ORB",
-        "execution_time_ms": 3525.7041454315186,
-        "nfeats": 100,
-        "thresh": 25,
+        "mAP": 0.5941671363416516,
+        "execution_time_ms": 15416.733741760254,
+        "total_features": 102021,
+        "nfeats": 8000,
+        "thresh": 64,
+        "ratio": 0.7
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.5925468039884516,
+        "execution_time_ms": 14249.277830123901,
+        "total_features": 101540,
+        "nfeats": 4000,
+        "thresh": 32,
+        "ratio": 0.5
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.5912234758568383,
+        "execution_time_ms": 18916.00251197815,
+        "total_features": 121472,
+        "nfeats": 4000,
+        "thresh": 16,
+        "ratio": 0.5
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.5888703288942089,
+        "execution_time_ms": 7774.669647216797,
+        "total_features": 62000,
+        "nfeats": 2000,
+        "thresh": 16,
         "ratio": 0.6
     },
     {
-        "mAP": 0.40321014398116334,
         "method": "ORB",
-        "execution_time_ms": 2559.7455501556396,
-        "nfeats": 100,
-        "thresh": 50,
+        "mAP": 0.5857607035931136,
+        "execution_time_ms": 19415.85111618042,
+        "total_features": 115817,
+        "nfeats": 10000,
+        "thresh": 64,
+        "ratio": 0.7
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.5610304169514696,
+        "execution_time_ms": 7347.353935241699,
+        "total_features": 66050,
+        "nfeats": 4000,
+        "thresh": 64,
+        "ratio": 0.75
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.5598521822898554,
+        "execution_time_ms": 7271.590709686279,
+        "total_features": 66050,
+        "nfeats": 4000,
+        "thresh": 64,
+        "ratio": 0.7
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.558927885926809,
+        "execution_time_ms": 60071.558475494385,
+        "total_features": 225657,
+        "nfeats": 8000,
+        "thresh": 16,
+        "ratio": 0.4
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.5522388637497634,
+        "execution_time_ms": 5555.079221725464,
+        "total_features": 31000,
+        "nfeats": 1000,
+        "thresh": 16,
         "ratio": 0.6
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.5465924426450742,
+        "execution_time_ms": 2852.5822162628174,
+        "total_features": 22326,
+        "nfeats": 1000,
+        "thresh": 64,
+        "ratio": 0.8
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.5457737153291572,
+        "execution_time_ms": 4584.120512008667,
+        "total_features": 38234,
+        "nfeats": 2000,
+        "thresh": 64,
+        "ratio": 0.6
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.5449873080136237,
+        "execution_time_ms": 4291.417598724365,
+        "total_features": 38234,
+        "nfeats": 2000,
+        "thresh": 64,
+        "ratio": 0.75
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.5410830372049208,
+        "execution_time_ms": 3971.194267272949,
+        "total_features": 32530,
+        "nfeats": 2000,
+        "thresh": 75,
+        "ratio": 0.8
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.539104020708207,
+        "execution_time_ms": 5359.712362289429,
+        "total_features": 31000,
+        "nfeats": 1000,
+        "thresh": 16,
+        "ratio": 0.5
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.5373265830480091,
+        "execution_time_ms": 3675.802707672119,
+        "total_features": 30591,
+        "nfeats": 1000,
+        "thresh": 32,
+        "ratio": 0.6
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.5349776594835077,
+        "execution_time_ms": 57055.80163002014,
+        "total_features": 216986,
+        "nfeats": 10000,
+        "thresh": 32,
+        "ratio": 0.4
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.5237234810478015,
+        "execution_time_ms": 7362.921953201294,
+        "total_features": 66050,
+        "nfeats": 4000,
+        "thresh": 64,
+        "ratio": 0.6
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.5178601830610141,
+        "execution_time_ms": 2053.853750228882,
+        "total_features": 19108,
+        "nfeats": 1000,
+        "thresh": 75,
+        "ratio": 0.8
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.5153882143991141,
+        "execution_time_ms": 2740.6716346740723,
+        "total_features": 22326,
+        "nfeats": 1000,
+        "thresh": 64,
+        "ratio": 0.75
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.5146512113617376,
+        "execution_time_ms": 4329.245567321777,
+        "total_features": 38234,
+        "nfeats": 2000,
+        "thresh": 64,
+        "ratio": 0.8
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.5127882312345227,
+        "execution_time_ms": 3423.297882080078,
+        "total_features": 30591,
+        "nfeats": 1000,
+        "thresh": 32,
+        "ratio": 0.5
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.512670881749829,
+        "execution_time_ms": 3729.9957275390625,
+        "total_features": 30591,
+        "nfeats": 1000,
+        "thresh": 32,
+        "ratio": 0.9
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.512551528366241,
+        "execution_time_ms": 17843.56164932251,
+        "total_features": 121472,
+        "nfeats": 4000,
+        "thresh": 16,
+        "ratio": 0.4
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.51168018035867,
+        "execution_time_ms": 5281.426429748535,
+        "total_features": 31000,
+        "nfeats": 1000,
+        "thresh": 16,
+        "ratio": 0.9
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.5044136150091828,
+        "execution_time_ms": 11102.019786834717,
+        "total_features": 81193,
+        "nfeats": 10000,
+        "thresh": 75,
+        "ratio": 0.8
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.5023270622193634,
+        "execution_time_ms": 2859.234571456909,
+        "total_features": 22326,
+        "nfeats": 1000,
+        "thresh": 64,
+        "ratio": 0.7
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.49734475507654585,
+        "execution_time_ms": 11225.799560546875,
+        "total_features": 81193,
+        "nfeats": 10000,
+        "thresh": 75,
+        "ratio": 0.75
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.4966682901585948,
+        "execution_time_ms": 9259.16838645935,
+        "total_features": 72612,
+        "nfeats": 8000,
+        "thresh": 75,
+        "ratio": 0.8
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.4960076227746678,
+        "execution_time_ms": 15747.34377861023,
+        "total_features": 102021,
+        "nfeats": 8000,
+        "thresh": 64,
+        "ratio": 0.6
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.4944750909789781,
+        "execution_time_ms": 11069.362878799438,
+        "total_features": 81193,
+        "nfeats": 10000,
+        "thresh": 75,
+        "ratio": 0.7
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.49414783146643115,
+        "execution_time_ms": 19485.7280254364,
+        "total_features": 115817,
+        "nfeats": 10000,
+        "thresh": 64,
+        "ratio": 0.5
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.4937826547602261,
+        "execution_time_ms": 9394.149541854858,
+        "total_features": 72612,
+        "nfeats": 8000,
+        "thresh": 75,
+        "ratio": 0.7
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.4892884623840302,
+        "execution_time_ms": 5557.815790176392,
+        "total_features": 49795,
+        "nfeats": 4000,
+        "thresh": 75,
+        "ratio": 0.75
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.4868970672294772,
+        "execution_time_ms": 9222.306966781616,
+        "total_features": 72612,
+        "nfeats": 8000,
+        "thresh": 75,
+        "ratio": 0.75
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.4859048319106164,
+        "execution_time_ms": 2875.2403259277344,
+        "total_features": 19108,
+        "nfeats": 1000,
+        "thresh": 75,
+        "ratio": 0.75
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.4858548524659639,
+        "execution_time_ms": 40471.96388244629,
+        "total_features": 181145,
+        "nfeats": 8000,
+        "thresh": 32,
+        "ratio": 0.4
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.47848956291914674,
+        "execution_time_ms": 19388.592004776,
+        "total_features": 115817,
+        "nfeats": 10000,
+        "thresh": 64,
+        "ratio": 0.6
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.47809729000864726,
+        "execution_time_ms": 3450.80304145813,
+        "total_features": 32530,
+        "nfeats": 2000,
+        "thresh": 75,
+        "ratio": 0.75
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.47730556459892537,
+        "execution_time_ms": 3268.6281204223633,
+        "total_features": 22326,
+        "nfeats": 1000,
+        "thresh": 64,
+        "ratio": 0.6
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.4761149034867871,
+        "execution_time_ms": 5768.833160400391,
+        "total_features": 49795,
+        "nfeats": 4000,
+        "thresh": 75,
+        "ratio": 0.8
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.4738666544467258,
+        "execution_time_ms": 5729.296445846558,
+        "total_features": 49795,
+        "nfeats": 4000,
+        "thresh": 75,
+        "ratio": 0.6
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.4700421654369023,
+        "execution_time_ms": 4036.7555618286133,
+        "total_features": 38234,
+        "nfeats": 2000,
+        "thresh": 64,
+        "ratio": 0.9
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.4628305389141303,
+        "execution_time_ms": 7658.034801483154,
+        "total_features": 66050,
+        "nfeats": 4000,
+        "thresh": 64,
+        "ratio": 0.9
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.46097942241129436,
+        "execution_time_ms": 9531.069278717041,
+        "total_features": 72612,
+        "nfeats": 8000,
+        "thresh": 75,
+        "ratio": 0.6
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.4527138066611751,
+        "execution_time_ms": 19483.599185943604,
+        "total_features": 115817,
+        "nfeats": 10000,
+        "thresh": 64,
+        "ratio": 0.9
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.45028818234362405,
+        "execution_time_ms": 15744.821786880493,
+        "total_features": 102021,
+        "nfeats": 8000,
+        "thresh": 64,
+        "ratio": 0.5
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.4493209506875379,
+        "execution_time_ms": 5493.922472000122,
+        "total_features": 49795,
+        "nfeats": 4000,
+        "thresh": 75,
+        "ratio": 0.7
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.4483407159664867,
+        "execution_time_ms": 3946.831703186035,
+        "total_features": 32530,
+        "nfeats": 2000,
+        "thresh": 75,
+        "ratio": 0.7
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.44754879623300675,
+        "execution_time_ms": 15741.450786590576,
+        "total_features": 102021,
+        "nfeats": 8000,
+        "thresh": 64,
+        "ratio": 0.9
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.4462668650951601,
+        "execution_time_ms": 8361.826658248901,
+        "total_features": 62000,
+        "nfeats": 2000,
+        "thresh": 16,
+        "ratio": 0.4
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.43878662982376493,
+        "execution_time_ms": 11097.373962402344,
+        "total_features": 81193,
+        "nfeats": 10000,
+        "thresh": 75,
+        "ratio": 0.6
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.4385293578559667,
+        "execution_time_ms": 3470.517635345459,
+        "total_features": 32530,
+        "nfeats": 2000,
+        "thresh": 75,
+        "ratio": 0.6
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.4362022444236703,
+        "execution_time_ms": 14251.503705978394,
+        "total_features": 101540,
+        "nfeats": 4000,
+        "thresh": 32,
+        "ratio": 0.4
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.43252975497757795,
+        "execution_time_ms": 2659.010410308838,
+        "total_features": 19108,
+        "nfeats": 1000,
+        "thresh": 75,
+        "ratio": 0.6
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.43088794320654283,
+        "execution_time_ms": 2392.613410949707,
+        "total_features": 19108,
+        "nfeats": 1000,
+        "thresh": 75,
+        "ratio": 0.5
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.4302515443755688,
+        "execution_time_ms": 2862.7877235412598,
+        "total_features": 19108,
+        "nfeats": 1000,
+        "thresh": 75,
+        "ratio": 0.7
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.4186714803321852,
+        "execution_time_ms": 11095.810651779175,
+        "total_features": 81193,
+        "nfeats": 10000,
+        "thresh": 75,
+        "ratio": 0.5
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.41493618054425385,
+        "execution_time_ms": 5902.732372283936,
+        "total_features": 49795,
+        "nfeats": 4000,
+        "thresh": 75,
+        "ratio": 0.5
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.4127271120692173,
+        "execution_time_ms": 3207.484722137451,
+        "total_features": 22326,
+        "nfeats": 1000,
+        "thresh": 64,
+        "ratio": 0.9
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.41249420244438095,
+        "execution_time_ms": 2521.5721130371094,
+        "total_features": 22326,
+        "nfeats": 1000,
+        "thresh": 64,
+        "ratio": 0.5
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.4074173835517727,
+        "execution_time_ms": 3767.7743434906006,
+        "total_features": 32530,
+        "nfeats": 2000,
+        "thresh": 75,
+        "ratio": 0.5
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.39857208811502437,
+        "execution_time_ms": 3367.382526397705,
+        "total_features": 32530,
+        "nfeats": 2000,
+        "thresh": 75,
+        "ratio": 0.9
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.3964053692502847,
+        "execution_time_ms": 6076.525449752808,
+        "total_features": 57109,
+        "nfeats": 2000,
+        "thresh": 32,
+        "ratio": 0.4
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.38672909074345296,
+        "execution_time_ms": 2601.067066192627,
+        "total_features": 19108,
+        "nfeats": 1000,
+        "thresh": 75,
+        "ratio": 0.9
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.38590848309550374,
+        "execution_time_ms": 7530.197381973267,
+        "total_features": 66050,
+        "nfeats": 4000,
+        "thresh": 64,
+        "ratio": 0.5
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.3835294294006606,
+        "execution_time_ms": 3885.5910301208496,
+        "total_features": 38234,
+        "nfeats": 2000,
+        "thresh": 64,
+        "ratio": 0.5
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.3791977961216589,
+        "execution_time_ms": 9394.443988800049,
+        "total_features": 72612,
+        "nfeats": 8000,
+        "thresh": 75,
+        "ratio": 0.5
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.36833819919692495,
+        "execution_time_ms": 5679.849147796631,
+        "total_features": 49795,
+        "nfeats": 4000,
+        "thresh": 75,
+        "ratio": 0.9
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.3641409490786222,
+        "execution_time_ms": 10864.538192749023,
+        "total_features": 81193,
+        "nfeats": 10000,
+        "thresh": 75,
+        "ratio": 0.9
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.3632741973033232,
+        "execution_time_ms": 19463.83261680603,
+        "total_features": 115817,
+        "nfeats": 10000,
+        "thresh": 64,
+        "ratio": 0.4
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.35162989202422146,
+        "execution_time_ms": 9378.373861312866,
+        "total_features": 72612,
+        "nfeats": 8000,
+        "thresh": 75,
+        "ratio": 0.9
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.34856694368834207,
+        "execution_time_ms": 4595.380067825317,
+        "total_features": 31000,
+        "nfeats": 1000,
+        "thresh": 16,
+        "ratio": 0.4
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.3198833927056221,
+        "execution_time_ms": 10850.659132003784,
+        "total_features": 81193,
+        "nfeats": 10000,
+        "thresh": 75,
+        "ratio": 0.4
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.3146912013519062,
+        "execution_time_ms": 15674.312353134155,
+        "total_features": 102021,
+        "nfeats": 8000,
+        "thresh": 64,
+        "ratio": 0.4
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.3099140248415174,
+        "execution_time_ms": 3651.5066623687744,
+        "total_features": 30591,
+        "nfeats": 1000,
+        "thresh": 32,
+        "ratio": 0.4
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.2996777060752531,
+        "execution_time_ms": 4056.872606277466,
+        "total_features": 38234,
+        "nfeats": 2000,
+        "thresh": 64,
+        "ratio": 0.4
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.2993403241589238,
+        "execution_time_ms": 7377.910614013672,
+        "total_features": 66050,
+        "nfeats": 4000,
+        "thresh": 64,
+        "ratio": 0.4
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.2742693576179029,
+        "execution_time_ms": 2643.2113647460938,
+        "total_features": 22326,
+        "nfeats": 1000,
+        "thresh": 64,
+        "ratio": 0.4
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.27163777867053446,
+        "execution_time_ms": 2108.3972454071045,
+        "total_features": 19108,
+        "nfeats": 1000,
+        "thresh": 75,
+        "ratio": 0.4
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.27130039675420514,
+        "execution_time_ms": 3609.5404624938965,
+        "total_features": 32530,
+        "nfeats": 2000,
+        "thresh": 75,
+        "ratio": 0.4
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.27130039675420514,
+        "execution_time_ms": 5656.252384185791,
+        "total_features": 49795,
+        "nfeats": 4000,
+        "thresh": 75,
+        "ratio": 0.4
+    },
+    {
+        "method": "ORB",
+        "mAP": 0.27130039675420514,
+        "execution_time_ms": 9377.587795257568,
+        "total_features": 72612,
+        "nfeats": 8000,
+        "thresh": 75,
+        "ratio": 0.4
     }
 ]
